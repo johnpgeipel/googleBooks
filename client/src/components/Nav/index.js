@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './style.css';
 
 function Index() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
-          MERN Digital Library
+          Google Reader
         </Link>
-      <div className="container">
+      {/* <div className="container"> */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"/>
@@ -24,11 +25,11 @@ function Index() {
               <Link to="/bookshelf"
                     className={window.location.pathname === "/bookshelf"
                       ? "nav-link active"
-                      : "nav-link"}>My Bookshelf</Link>
+                      : "nav-link"}>Saved</Link>
             </li>
           </ul>
         </div>
-      </div>
+      {/* </div> */}
     </nav>
   )
 }

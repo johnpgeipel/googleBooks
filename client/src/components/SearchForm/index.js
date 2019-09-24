@@ -9,14 +9,14 @@ function SearchForm(props) {
             <form>
               <div className="form-group">
                 <label htmlFor="book-search">
-                  Search:
+                  <h4>Search</h4>
                 </label>
                 <input type="text"
                        value={props.search}
                        onChange={props.handleInputChange}
                        className="form-control"
                        id="book-search"
-                       placeholder="Eloquent JavaScript 3rd Edition"/>
+                       placeholder="Book Title or Author"/>
               </div>
               <button type="submit"
                       className="btn btn-primary"

@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-// Re-usable Stateless Component for both the Search and the Bookshelf Pages.
+// Re-usable Stateless Component for both the Search and the SavedBook Pages.
 function BookCard(props) {
   return (
     <div className="row mb-5">
@@ -14,7 +14,7 @@ function BookCard(props) {
                    : book.googleBookId
                }>
             <div className="card-body">
-              <h5 className="card-title">{book.title}</h5>
+              <h3 className="card-title">{book.title}</h3>
               <h6 className="card-subtitle mb-2 text-muted">{book.subtitle}</h6>
               <div className="media">
                 <img src={book.thumbnail}

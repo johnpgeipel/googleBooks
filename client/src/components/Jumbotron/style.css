@@ -1,13 +1,18 @@
 .title {
-  color: #39b879;
-  text-shadow: 2px 2px black;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 .lead {
   color: cornsilk;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 5px black;
 }
 
 .instructions {
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 5px black;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  
 }
