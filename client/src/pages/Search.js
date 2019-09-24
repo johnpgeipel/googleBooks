@@ -94,14 +94,17 @@ class Search extends Component {
 
   render() {
     return (
+      <div>
+        <Jumbotron
+            title="Search"
+            lead="Using Google Books API"
+            instructions="Search for a book; then view it on Google Books, or add it to your Bookshelf..."
+            image="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=853&q=80"
+          />
+      
       <div className="container">
 
-        <Jumbotron
-          title="Search"
-          lead="Using Google Books API"
-          instructions="Search for a book; then view it on Google Books, or add it to your Bookshelf..."
-          image="https://www.travelcaffeine.com/wp-content/uploads/2017/07/last-bookstore-tunnel-downtown-los-angeles-california-876.jpg"
-        />
+        
         <SearchForm
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
@@ -112,6 +115,7 @@ class Search extends Component {
           buttonType="btn btn-success mt-2"
           buttonText="Save Book"
         />
+      </div>
       </div>
     );
   }

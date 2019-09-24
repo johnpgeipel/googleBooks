@@ -27,20 +27,23 @@ class Bookshelf extends Component {
 
   render() {
     return (
-      <div className="container">
+      
+      <div>
         <Jumbotron
-          title="My Bookshelf"
+          title="Saved Books"
           lead="All of Your Saved Books in One Convenient Location."
-          instructions="View your book at Google, or remove it from your Bookshelf..."
-          image="https://i0.wp.com/www.wayfaringviews.com/wp-content/uploads/2016/05/Last_Bookstore.jpg?ssl=1"
+          instructions="View your book at Google, or remove it from your Libray."
+          image="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=853&q=80"
         />
+        <div className="container">
         <BookCard
           books={this.state.books}
           buttonAction={this.deleteBook}
           buttonType="btn btn-danger mt-2"
           buttonText="Delete Book"
         />
-      </div>
+        </div>
+       </div>
     )
   }
 }
