@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "homepage":"https://johnpgeipel.github.io/google-books",
+  "homepage": "https://johnpgeipel.github.io/google-books",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,7 +15,6 @@
     "heroku-postbuild": "npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    
   },
   "keywords": [],
   "author": "",
@@ -27,6 +26,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "express": "^4.16.4",
+    "gh-pages": "^2.1.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.4.4"
   }
