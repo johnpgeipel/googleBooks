@@ -17,17 +17,29 @@ function BookCard(props) {
               <h3 className="card-title">{book.title}</h3>
               <h6 className="card-subtitle mb-2 text-muted">{book.subtitle}</h6>
               <div className="media">
-                <img src={book.thumbnail}
-                     className="align-self-center mr-3" alt="testing"/>
+                {/* <img src={book.thumbnail}
+                     className="align-self-center mr-3" alt="testing"/> */}
+                  
                 <div className="media-body">
                   <h6 className="mt-0">{book.authors.join(', ')}</h6>
+                  
+                  {/* <p className="mb-2">
+                    <small className="text-muted">Published: {book.publishedDate}</small>
+                  </p> */}
+                  <img src={book.thumbnail}
+                     className="float-left" alt="testing"/>
                   <p className="mb-0">{book.description}</p>
+                  
                   <p className="mb-0">
+                    <small className="text-muted">{book.pageCount} pages. Published: {book.publishedDate}</small>
+                  </p>
+                  
+                  {/* <p className="mb-0">
                     <small className="text-muted">{book.pageCount} pages.</small>
                   </p>
                   <p className="mb-2">
                     <small className="text-muted">Published: {book.publishedDate}</small>
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <a className="btn btn-info mr-1 mt-2" href={book.link} target="_blank"

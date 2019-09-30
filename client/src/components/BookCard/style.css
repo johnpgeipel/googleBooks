@@ -1,3 +1,14 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+img {
+    margin: 5px 15px 5px 0px;
+}
+
+.btn, button {
+    float: right;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
