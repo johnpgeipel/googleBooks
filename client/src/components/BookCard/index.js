@@ -14,7 +14,7 @@ function BookCard(props) {
                    : book.googleBookId
                }>
             <div className="card-body">
-              <h3 className="card-title">{book.title}</h3>
+              <h3 className="card-title"><strong>{book.title}</strong></h3>
               <h6 className="card-subtitle mb-2 text-muted">{book.subtitle}</h6>
               <div className="media">
                 {/* <img src={book.thumbnail}
@@ -42,8 +42,6 @@ function BookCard(props) {
                   </p> */}
                 </div>
               </div>
-              <a className="btn btn-info mr-1 mt-2" href={book.link} target="_blank"
-                 rel="noopener noreferrer">View Book</a>
               <button className={props.buttonType}
                       onClick={props.buttonAction}
                       id={
@@ -54,6 +52,9 @@ function BookCard(props) {
               >
                 {props.buttonText}
               </button>
+              <a className="btn btn-outline-info mr-1 mt-2" href={book.link} target="_blank"
+                 rel="noopener noreferrer">View Book</a>
+              
             </div>
           </div>
         ))}

@@ -112,7 +112,7 @@ class Search extends Component {
         <BookCard
           books={this.state.results}
           buttonAction={this.saveBook}
-          buttonType="btn btn-success mt-2"
+          buttonType="btn btn-outline-success mt-2"
           buttonText="Save Book"
         />
       </div>

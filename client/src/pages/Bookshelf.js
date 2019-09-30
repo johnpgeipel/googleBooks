@@ -39,7 +39,7 @@ class Bookshelf extends Component {
         <BookCard
           books={this.state.books}
           buttonAction={this.deleteBook}
-          buttonType="btn btn-danger mt-2"
+          buttonType="btn btn-outline-danger mt-2"
           buttonText="Delete Book"
         />
         </div>

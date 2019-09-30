@@ -19,7 +19,7 @@ function SearchForm(props) {
                        placeholder="Book Title or Author"/>
               </div>
               <button type="submit"
-                      className="btn btn-primary"
+                      className="btn btn-outline-primary"
                       onClick={props.handleFormSubmit}>
                 Search
               </button>
